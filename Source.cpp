@@ -19,10 +19,11 @@ int knapSack(int W, int wt[], int val[], int n)
 			return max(val[n - 1] + knapSack(W - wt[n - 1], wt, val, n - 1), knapSack(W, wt,
 				val, n - 1));
 }
-// Driver code
+// main 
+// Mohamed Nasr was here :)
 int main()
 {
-	int val[] = { 60, 100, 120 };
+	int val[] = { 70, 100, 120, 50 };
 	int wt[] = { 10, 20, 30 };
 	int W = 50;
 	int n = sizeof(val) / sizeof(val[0]);
