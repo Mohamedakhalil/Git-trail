@@ -32,3 +32,6 @@ void main()
 	cout << knapSack(W, wt, val, n);
 }
 // This code is contributed by rathbhupendra
+
+
+// Ahmed El Geneidy contributed to this.
