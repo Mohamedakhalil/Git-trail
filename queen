@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+theBoardSolver(int board[4][4], int col) {
+  if (col >= 4)
+    return true;
+  for (int i = 0; i < 4; i++) {
+if (toPlaceOrNotToPlace(board, i, col)) {
+board[i][col] = 1;
+if (theBoardSolver(board, col + 1))
+return true;
+// Backtracking is hella important in this one.
+board[i][col] = 0;
+}
+}
+return false;
+}
+
+int main() {
+int board[4][4];
+if (!theBoardSolver(board, 0)) {
+cout << "Solution not found.";
+}
+printBoard(board);
+}
