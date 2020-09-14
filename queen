@@ -3,7 +3,7 @@
 using namespace std;
 
 void printBoard(int board[4][4]);
-
+bool theBoardSolver(int board[4][4], int col);
 
 void printBoard(int board[4][4]) {
 int i;
@@ -20,7 +20,7 @@ cout << "\n";
 }
 }
 
-bool theBoardSolver(int board[4][4], int col);
+
 
 
 
