@@ -4,6 +4,7 @@ using namespace std;
 
 void printBoard(int board[4][4]);
 bool theBoardSolver(int board[4][4], int col);
+bool toPlaceOrNotToPlace(int board[4][4], int row, int col);
 
 void printBoard(int board[4][4]) {
   int i;
