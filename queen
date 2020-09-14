@@ -21,13 +21,6 @@ void printBoard(int board[4][4]) {
   }
 }
 
-
-
-bool toPlaceOrNotToPlace(int board[4][4], int row, int col);
-//to check whether to place the queen or not
-
-
-
 bool toPlaceOrNotToPlace(int board[4][4], int row, int col)
     {
     int i, j;
