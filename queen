@@ -1,4 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
 
+void printBoard(int board[4][4]);
+
+
+void printBoard(int board[4][4]) {
+int i;
+for (i = 0; i < 4; i++) {
+for (int j = 0; j < 4; j++) {
+if (board[i][j] == 1) {
+cout << "Q\t";
+}
+else {
+cout << "_\t";
+}
+}
+cout << "\n";
+}
+}
 
 
 
