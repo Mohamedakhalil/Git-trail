@@ -1,4 +1,5 @@
 
+bool theBoardSolver(int board[4][4], int col);
 
 
 
